@@ -3,6 +3,10 @@ header {
     font-family: arial,helvetica;
     color: #fff;
 }
+a {
+    text-decoration: none;
+    color: #fff;
+}
 nav {
     padding-right: 50px;
     display:  flex;

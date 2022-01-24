@@ -1,0 +1,77 @@
+html, 
+body {
+    overflow-y: auto;
+    padding: 0;
+    margin: 0;
+    font-family: arial,helvetica;
+}
+
+#bg-sobre {
+    background-color: #9E72B0;
+    height: 100%;
+    width: 100%;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco-texto {
+    background-color: white;
+}
+.titulo-texto {
+    padding: 4vh 22vw 0vh 8vw;
+}
+
+h1{
+    top: 30vh;
+    left: 40vw;
+    font: normal normal bold 80px/1.4em raleway,sans-serif;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    color: grey;
+}
+p {
+    line-height: 1.6em;
+
+    font-size: 20px;
+    color: grey;
+    letter-spacing: 0.05em;
+}
+#o-que-eh-foto{
+    background-image: url("drone.jpeg");
+}
+#vantagens-foto {
+    background-image: url("onibus.jpeg");
+}
+.parallax {
+    opacity: 0.5;
+    width: 100%;
+    /* Set a specific height */
+    min-height: 500px; 
+  
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.decoracao-titulo {
+    top: 10px;
+    width: 65px;
+    height: 10px;
+    background-color: #8967AA;
+}
+
+#lista-vantagens {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+
+}
+#lista-vantagens li {
+    margin-right: 20px;
+    width: 25vw;
+}

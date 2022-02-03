@@ -33,7 +33,6 @@ h1{
 }
 p {
     line-height: 1.6em;
-
     font-size: 20px;
     color: grey;
     letter-spacing: 0.05em;
@@ -42,6 +41,9 @@ p {
     background-image: url("drone.jpeg");
 }
 #vantagens-foto {
+    background-image: url("onibus.jpeg");
+}
+#venha-participar-do-sandbox{
     background-image: url("onibus.jpeg");
 }
 .parallax {
@@ -70,6 +72,11 @@ p {
     list-style-type: none;
     justify-content: space-around;
 
+}
+.video-sandbox {
+    width: 70vw;
+    margin-left: calc((100vw - 70vw)/2);
+    align-self: center;
 }
 #lista-vantagens li {
     margin-right: 20px;

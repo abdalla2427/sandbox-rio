@@ -4,6 +4,9 @@
 
 .image__img {
     display: block;
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
 
 .image__overlay {
@@ -27,7 +30,7 @@
 }
 
 .image__overlay--primary {
-    background: #009578;
+    background: #8967AA;
 }
 
 .image__overlay > * {

@@ -6,14 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sandbox.rio - sobre</title>
     <link rel="stylesheet" href="assets/header.css">
-    <link rel="stylesheet" href="assets/em-andamento.css">
+    <link rel="stylesheet" href="assets/em-andamento/em-andamento.css">
     <link rel="stylesheet" href="assets/progress-bar.css">
     <link rel="stylesheet" href="assets/efeito-overlay.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="assets/em-andamento/em-andamento.js"></script>
 
     <link rel="stylesheet" href="assets/footer.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 </head>
 <body>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script> 
     <header>
         <a href="index.html" >
             <div id="home">
@@ -41,35 +46,72 @@
                 <div class="wrapper-imagem">
                     <img class="image__img" src="assets/em-andamento/projeto1.jpeg">
                     <div class="image__overlay image__overlay--primary overlay">
-                        <div class="image__title">Titulo</div>
+                        <div class="image__title">Projeto 1</div>
                         <p class="image__description">
                             Texto
                         </p>
                     </div>
                 </div>
                 <div class="wrapper-imagem">
-                    <img class="imagem-projeto" src="assets/em-andamento/projeto2.jpeg">
-                    <div class="overlay"></div>
+                    <img class="image__img" src="assets/em-andamento/projeto2.jpeg">
+                    <div class="image__overlay image__overlay--primary overlay">
+                        <div class="image__title">Projeto 2</div>
+                        <p class="image__description">
+                            Texto
+                        </p>
+                    </div>
                 </div>
                 <div class="wrapper-imagem">
-                    <img class="imagem-projeto" src="assets/em-andamento/projeto3.jpeg">
-                    <div class="overlay"></div>
+                    <img class="image__img" src="assets/em-andamento/projeto3.jpeg">
+                    <div class="image__overlay image__overlay--primary overlay">
+                        <div class="image__title">Projeto 3</div>
+                        <p class="image__description">
+                            Texto
+                        </p>
+                    </div>
                 </div>
                 <div class="wrapper-imagem">
-                    <img class="imagem-projeto" src="assets/em-andamento/projeto4.jpeg">
-                    <div class="overlay"></div>
+                    <img class="image__img" src="assets/em-andamento/projeto4.jpeg">
+                    <div class="image__overlay image__overlay--primary overlay">
+                        <div class="image__title">Projeto 4</div>
+                        <p class="image__description">
+                            Texto
+                        </p>
+                    </div>
                 </div>
                 <div class="wrapper-imagem">
-                    <img class="imagem-projeto" src="assets/em-andamento/projeto5.jpeg">
-                    <div class="overlay"></div>
+                    <img class="image__img" src="assets/em-andamento/projeto5.jpeg">
+                    <div class="image__overlay image__overlay--primary overlay">
+                        <div class="image__title">Projeto 5</div>
+                        <p class="image__description">
+                            Texto
+                        </p>
+                    </div>
                 </div>
                 <div class="wrapper-imagem">
-                    <img class="imagem-projeto" src="assets/em-andamento/projeto6.jpeg">
-                    <div class="overlay">
+                    <img class="image__img" src="assets/em-andamento/projeto6.jpeg">
+                    <div class="image__overlay image__overlay--primary overlay">
+                        <div class="image__title">Projeto 6</div>
+                        <p class="image__description">
+                            Texto
+                        </p>
                     </div>
                 </div>
             </div>
         </div>
+        <div class="mapa-da-inovacao">
+            <div class="titulo-texto">
+                <!-- <div class="decoracao-titulo"></div> -->
+                <h1>Mapa da Inovação</h1>
+                <h3>Confira aqui onde estão sendo testados os produtos e serviços do Sandbox.Rio
+                </h3>
+            </div>
+            <div id="map"></div>
+        </div>
+        <script
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAUrTUnVOfujubfQEQ-w_fV3EWEsgnxLU0&callback=initMap&v=weekly"
+          async>
+        </script>    
     </section>
     <footer>
         <div class="itens-footer">

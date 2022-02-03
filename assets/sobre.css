@@ -36,6 +36,8 @@ p {
     font-size: 20px;
     color: grey;
     letter-spacing: 0.05em;
+    text-align: justify;
+    text-justify: inter-word;
 }
 #o-que-eh-foto{
     background-image: url("drone.jpeg");
@@ -45,6 +47,14 @@ p {
 }
 #venha-participar-do-sandbox{
     background-image: url("onibus.jpeg");
+}
+#participar-foto {
+    background-image: url("vlt.jpeg");
+}
+
+#funciona-image{
+    max-width: 100%;
+    max-height: 100%;
 }
 .parallax {
     opacity: 0.5;

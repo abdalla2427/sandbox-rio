@@ -1,0 +1,16 @@
+footer {
+    background-color: #9E72B0;
+    font-family: arial,helvetica;
+    color: #fff;
+}
+.itens-footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 1vh 30vw;
+    text-align: center;
+}
+h4 {
+    text-align: center;
+    margin: 0.6em 0;
+}

@@ -1,7 +1,7 @@
 html, 
 body {
     height: 100%;
-    overflow-y: hidden;
+    overflow-y: auto;
 }
 
 body {
@@ -20,6 +20,8 @@ body section {
     justify-content: flex-start;
     height: 100%;
     background-color: #9E72B0;
+    position: relative;
+    margin-top: 70px;
 }
 
 section video {
@@ -37,21 +39,16 @@ section video {
     width: 100%;
 }
 
-#logos {
-    width: 100%;
-    position: fixed;
-    top: calc(10%)
-}
 
 #logo-smdeis{
-    top: 30vh;
+    top: 35vh;
     width: 40vw;
     left: 30vw;
     position: absolute;
     -webkit-animation-delay: -8s;
 }
 #logo-sandbox{
-    top: 30vh;
+    top: 35vh;
     width: 40vw;
     position: absolute;
     left: 30vw;

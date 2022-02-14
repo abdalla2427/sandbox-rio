@@ -7,13 +7,15 @@ header {
     z-index: 3;
     width: 100%;
     height: 70px;
+    box-sizing: border-box;
+
 }
-a {
+nav a {
     text-decoration: none;
     color: #fff;
 }
 nav {
-    padding-right: 50px;
+    padding-right: 2em;
     display:  flex;
     flex-direction: row;
     z-index: 100;
@@ -23,11 +25,13 @@ nav ul {
     align-self: flex-start;
     display: flex;
     width: 100%;
-    align-items: flex-end;
+    align-items: center;
     justify-content: flex-end;
     list-style-type: none;
     padding: 0;
     align-self: center;
+    margin: 0;
+    height: 100%;
 }
 
 nav li span {
@@ -44,25 +48,105 @@ nav a:visited {
 }
 
 nav li {
-    margin: 10px;
+    padding: 1em;
     font-size: 1.1em;
     letter-spacing: 1px;
+    min-width: fit-content;
     -webkit-font-smoothing: antialiased;
+    height: 100%;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
 }
 
 header {
     display: flex;
-    justify-content: space-between;
-    
+    justify-content: space-between; 
 }
 
 header img {
-    margin-bottom: 10px;
-    margin-left: 40px;
+    padding-bottom: 1em;
+    padding-left: 2em;
     max-height: 60px;
 }
 
 #home {
-    margin-top: 5px;
+    padding-top: 0.4em;
     cursor: pointer;
+}
+#menu-hamburger {
+    visibility: hidden;
+}
+
+.dropdown-content {
+    display: none;
+}
+
+.dropdown:hover .dropdown-content {
+    background: #9E72B0;
+    opacity: 0.9;
+    top: 70px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    width: fit-content;
+}
+
+.dropdown-content a {
+    padding: 1em;
+    justify-content: center;
+}
+
+.dropdown-link:hover {
+    background: #9262a5;
+}
+
+
+@media (max-width: 970px) {
+    nav ul{
+        visibility: hidden;
+        display: block;
+        left: 0;
+        position: absolute;
+        top: 70px;
+        z-index: 100;
+        height: 0;
+        width: 100vw;
+        opacity: 0.9;
+        background: #9262a5;
+    }
+    nav li {
+        height: 40px;
+        margin: 20px;
+        border-bottom: 2px solid rgba(0, 0, 0, 0.1);
+    }
+
+    .active {
+        height: calc(100vh - 70px);
+        visibility: visible;
+    }
+
+    nav ul{
+        height: calc(100vh - 70px);
+    }
+
+    #menu-hamburger {
+        visibility: visible;
+        border: none;
+        align-self: center;
+        background:none;
+        height: 40px;
+        width: 45px;
+    }
+    #menu-hamburger span {
+        height: 5px;
+        background: white;
+        width: 100%;
+        display: block;
+        margin: 3px;
+        box-sizing: border-box;
+        cursor: pointer;
+    }
+    #menu-hamburger {
+    }
 }

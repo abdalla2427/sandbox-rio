@@ -17,7 +17,7 @@ ul {
     padding: 0;
     width: 900px;
 }
-li {
+section li {
     list-style-type: none;
     margin-top: 1em;
 }
@@ -58,7 +58,9 @@ li button {
 .titulo-texto {
     padding-top: 5vh
 }
-
+ul a {
+    text-decoration: none;
+}
 .decoracao-titulo {
     top: 10px;
     width: 65px;

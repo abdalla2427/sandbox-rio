@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>sandbox.rio - sobre</title>
     <link rel="stylesheet" href="assets/header.css">
-    <link rel="stylesheet" href="assets/sobre.css">
+    <link rel="stylesheet" href="assets/sobre/sobre.css">
     <link rel="stylesheet" href="assets/footer.css">
     <link rel="stylesheet" href="assets/progress-bar.css">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
@@ -14,14 +14,27 @@
 </head>
 <body>
     <header>
-        <a href="index.html" >
-            <div id="home">
+        <a href="index.html">
+            <div href="index.html" id="home">
                 <img src="assets/sandbox-logo.png">
             </div>
         </a>
         <nav>
+            <button id="menu-hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
             <ul>
-                <li><a href="sobre.html">sobre o sandbox</a></li>
+                <li class="dropdown">
+                    <a href="sobre.html">sobre o sandbox</a>
+                    <div class="dropdown-content">
+                        <a class="dropdown-link" href="sobre.html#o-que-eh-section">o que é?</a>
+                        <a class="dropdown-link" href="sobre.html#vantagens-section">vantagens</a>
+                        <a class="dropdown-link" href="sobre.html#quem-pode-participar-section">quem pode participar?</a>
+                        <a class="dropdown-link" href="sobre.html#como-funciona-section">como funciona?</a>
+                    </div>
+                </li>
                 <li><a href="chamadas.html">chamadas</a></li>
                 <li><a href="em-andamento.html">em andamento</a></li>
                 <li><a>publicações</a></li>
@@ -33,7 +46,8 @@
             <div id="o-que-eh-foto" class="parallax">
             </div>
         </div>
-        <div class="bloco-texto">
+        <div class="bloco-texto" >
+            <div class="navegacao-externa" id="o-que-eh-section"></div>
             <div style="margin-top: 20px;">
                 <div class="titulo-texto">
                     <div class="decoracao-titulo"></div>
@@ -54,6 +68,7 @@
             </div>
         </div>
         <div class="bloco-texto">
+            <div class="navegacao-externa" id="vantagens-section"></div>
             <div style="margin-top: 20px;">
                 <div class="titulo-texto">
                     <div class="decoracao-titulo"></div>
@@ -87,6 +102,7 @@
             </div>
         </div>
         <div class="bloco-texto">
+            <div class="navegacao-externa" id="quem-pode-participar-section"></div>
             <div style="margin-top: 20px;">
                 <div class="titulo-texto">
                     <div class="decoracao-titulo"></div>
@@ -108,6 +124,7 @@
             </div>
         </div>
         <div class="bloco-texto">
+            <div class="navegacao-externa" id="como-funciona-section"></div>
             <div style="margin-top: 20px;">
                 <div class="titulo-texto">
                     <div class="decoracao-titulo"></div>

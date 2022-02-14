@@ -17,7 +17,7 @@ ul {
     padding: 0;
     width: 900px;
 }
-li {
+section li {
     list-style-type: none;
     margin-top: 1em;
 }

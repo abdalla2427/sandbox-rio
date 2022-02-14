@@ -20,12 +20,12 @@
             </div>
         </a>
         <nav>
-            <button id="menu-hamburger">
+            <button id="menu-hamburger" >
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul>
+            <ul id="lista-navegacao">
                 <li class="dropdown">
                     <a href="sobre.html">sobre o sandbox</a>
                     <div class="dropdown-content">
@@ -37,7 +37,7 @@
                 </li>
                 <li><a href="chamadas.html">chamadas</a></li>
                 <li><a href="em-andamento.html">em andamento</a></li>
-                <li><a>publicações</a></li>
+                <li><a href="transparencia.html">transparência</a></li>
             </ul>
         </nav>
     </header>
@@ -130,20 +130,42 @@
                     <div class="decoracao-titulo"></div>
                     <h1> COMO FUNCIONA O SANDBOX?</h1>
                 </div>
-                <div >
-                    <div class="step-bar" style="width: 100%; overflow-x: none;">
-                        <div class="container-fluid">
-                            <ul class="list-unstyled multi-steps" style="padding-left: 0; margin-bottom: 15vh; margin-top: 5vh;">
-                              <li class="is-active">Prefeitura <br>publica o Edital</li>
-                              <li class="is-active">Interesssados <br> enviam as propostas</li>
-                              <li>Prefeitura Analisa e <br> Seleciona os Projetos</li>
-                              <li>Os selecionados recebem <br> autorização provisória para testes</li>
-                              <li>As soluções são implantadas <br>e monitoradas</li>
-                              <li>Fim dos Testes e <br> Analises dos Resultados obtiods</li>
-                            </ul>
-                        </div>
-                    </div> 
+                <div id="div-ciclo-como-funciona">
+                    <img src="assets/sobre/ciclo-como-funciona.svg">
                 </div>
+                <div style="padding: 0vh 22vw 6vh 8vw;">
+                    <p>
+                        O Sandbox.Rio pretende selecionar projetos que auxiliem, de algum modo, o desenvolvimento econômico da cidade do Rio de Janeiro por meio de soluções inovadoras. Para isso, é necessário que os projetos estejam alinhados às competências de atuação dos municípios.
+                        São exemplos de projetos elegíveis ao Sandbox.Rio:
+                    </p>   
+                        <ul id="lista-ciclo-como-funciona">
+                            <li>
+                                <p>
+                                    Simplificações na forma de licenciar projetos urbanísticos
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Tecnologias que promovam a digitalização dos serviços públicos municipais<br>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Utilização segura de drones para a atuação de entidades públicas e privadas<br>
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Instalação de estruturas nas vias públicas municipais para  a promoção de iniciativas sustentáveis
+                                </p>
+                            </li>
+                            <li>
+                                <p>
+                                    Soluções de Smart City e Mobility as a Service (MaaS)
+                                </p>
+                            </li>
+                        </ul>
+                </div> 
                 </div>
                 <div id="venha-participar-do-sandbox-bg">
                     <div id="venha-participar-do-sandbox" class="parallax">
@@ -155,7 +177,7 @@
                             <div class="decoracao-titulo"></div>
                             <h1> VENHA PARCTIPAR DO SANBOX.RIO</h1>
                         </div>
-                        <div style="margin-bottom: 30vh;">
+                        <div style="padding: 10vh; display: flex; justify-content: center;">
                             <video class="video-sandbox" src="assets/sobre/video-sandbox.mp4" controls></video>
                         </div>
                     </div>
@@ -185,6 +207,7 @@
                 </h4>
             </div>
         </div>
+        <script src="assets/header.js"></script>
     </footer>
 </body>
 </html>

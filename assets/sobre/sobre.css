@@ -41,8 +41,6 @@ p {
     font-size: 20px;
     color: grey;
     letter-spacing: 0.05em;
-    text-align: justify;
-    text-justify: inter-word;
 }
 #o-que-eh-foto{
     background-image: url("drone.jpeg");
@@ -61,18 +59,6 @@ p {
     max-width: 100%;
     max-height: 100%;
 }
-.parallax {
-    opacity: 0.5;
-    width: 100%;
-    /* Set a specific height */
-    min-height: 500px; 
-  
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
 
 .decoracao-titulo {
     top: 10px;
@@ -90,18 +76,79 @@ p {
 }
 .video-sandbox {
     width: 70vw;
-    margin-left: calc((100vw - 70vw)/2);
-    align-self: center;
+    min-width: 330px;
 }
 #lista-vantagens li {
     margin-right: 20px;
     width: 25vw;
 }
 
-#o-que-eh-section {
-}
-
 .navegacao-externa {
     position: absolute;
     top: -70px;
+}
+
+#div-ciclo-como-funciona {
+    display: flex;
+    justify-content: center;
+}
+#div-ciclo-como-funciona img {
+    width: 95vw;
+    align-self: center;
+    padding: 10vh 0;
+}
+
+#lista-faq {
+    width: 80vw;
+}
+
+
+@media (min-width: 690px) {
+    .parallax {
+        opacity: 0.5;
+        width: 100%;
+        /* Set a specific height */
+        min-height: 500px; 
+        
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 690px) {
+    h1{
+        font-size: 2rem;
+    }
+    p {
+        font-size: 0.95rem;
+    }
+    .parallax {
+        opacity: 0.5;
+        width: 100%;
+        /* Set a specific height */
+        min-height: 500px; 
+        object-fit: cover;
+        background-position: center;
+        /* Create the parallax scrolling effect */
+    }
+
+    #lista-vantagens {
+        flex-direction: column;
+        width: 330px;
+    }
+    #lista-vantagens li {
+        min-width: 330px
+    }
+    #lista-editais {
+        padding: 0;
+    }
+    .decoracao-titulo {
+        top: 10px;
+        width: 1.5em;
+        height: 0.4em;
+        background-color: #8967AA;
+    }
 }

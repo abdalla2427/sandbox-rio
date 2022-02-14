@@ -19,12 +19,12 @@
             </div>
         </a>
         <nav>
-            <button id="menu-hamburger">
+            <button id="menu-hamburger" >
                 <span></span>
                 <span></span>
                 <span></span>
             </button>
-            <ul>
+            <ul id="lista-navegacao">
                 <li class="dropdown">
                     <a href="sobre.html">sobre o sandbox</a>
                     <div class="dropdown-content">
@@ -36,22 +36,13 @@
                 </li>
                 <li><a href="chamadas.html">chamadas</a></li>
                 <li><a href="em-andamento.html">em andamento</a></li>
-                <li><a>publicações</a></li>
+                <li><a href="transparencia.html">transparência</a></li>
             </ul>
         </nav>
     </header>
     <section>
-        <div class="step-bar">
-            <div class="container-fluid">
-                <ul class="list-unstyled multi-steps">
-                  <li class="is-active">Publicação do Edital</li>
-                  <li>Envio das Propostas</li>
-                  <li>Análise de Elegibilidade</li>
-                  <li>Análise dos Projetos</li>
-                  <li>Convocação dos <br>Pré-Selecionados para Reunião de Apresentação</li>
-                  <li>Análise e Publicação do Resultado Final</li>
-                </ul>
-            </div>
+        <div class="ciclo-chamdas">
+            <img src="assets/chamadas/ciclo-selecao.svg">
         </div>
         <div class="anexos">
             <div class="titulo-texto">
@@ -109,6 +100,85 @@
             <div class="titulo-texto">
                 <div class="decoracao-titulo"></div>
                 <h1>FAQ</h1>
+                <div id="lista-faq">
+                    <div class="card-faq" onclick="clickCard(this)">
+                        <div class="titulo-card-faq">
+                            <h3>
+                                Quem pode se inscrever?
+                            </h3>
+                            <span class="material-icons icone-expand-more">
+                                expand_more
+                            </span>
+                        </div>
+                        <div class="conteudo-card-faq">
+                            <p>
+                                Qualquer pessoa jurídica como empresas, institutos de pesquisa e outras entidades voltadas à promoção de inovações tecnológicas, om capacidade técnica e financeira e que apresentem projetos elegíveis, 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-faq" onclick="clickCard(this)">
+                        <div class="titulo-card-faq">
+                            <h3>
+                                Meu Projeto é elegível? 
+                            </h3>
+                            <span class="material-icons icone-expand-more">
+                                expand_more
+                            </span>
+                        </div>
+                        <div class="conteudo-card-faq">
+                            <p>
+                                São elegíveis ao Sandbox projetos que buscam desenvolver soluções e/ou produtos inovadores com potencial impacto positivo à sociedade e ao município. Para isso, a Proposta deve conter os elementos presentes no item ___ do Edital e deve, dentre outros fatores: 
+                            </p>
+                            <ul>
+                                <li>
+                                    <p>
+                                        Expor o problema a ser solucionado pelo produto e/ou serviço proposto, incluindo descrição de ganhos e benefícios ao Município e à coletividade;
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Descrever as razões pelas quais o produto e/ou serviço é considerado inovador;
+                                    </p>
+                                </li>
+                                <li>
+                                    <p>
+                                        Apresentar um comparativo entre o produto e/ou serviço objeto do projeto e aqueles oferecidos atualmente no segmento, ressaltando suas similaridades e diferenças;
+                                    </p>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="card-faq" onclick="clickCard(this)">
+                        <div class="titulo-card-faq">
+                            <h3>
+                                Há limitação de tema?  
+                            </h3>
+                            <span class="material-icons icone-expand-more">
+                                expand_more
+                            </span>
+                        </div>
+                        <div class="conteudo-card-faq">
+                            <p>
+                                Não. Projetos de matérias diversas são admitidos no Projeto, desde que a regulação pretendida seja compatível com a competência municipal. São exemplos de temas afetos ao município as questões urbanísticas, de transporte local, eficientização dos serviços públicos municipais, desenvolvimento econômico da cidade, dentre outros. 
+                            </p>
+                        </div>
+                    </div>
+                    <div class="card-faq" onclick="clickCard(this)">
+                        <div class="titulo-card-faq">
+                            <h3>
+                                Qual o prazo dos testes?
+                            </h3>
+                            <span class="material-icons icone-expand-more">
+                                expand_more
+                            </span>
+                        </div>
+                        <div class="conteudo-card-faq">
+                            <p>
+                                Ao se inscrever, a interessado deve optar pelo prazo de 6 ou 12 meses.
+                            </p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -136,6 +206,8 @@
                 </h4>
             </div>
         </div>
+        <script src="assets/header.js"></script>
+        <script src="assets/chamadas/chamadas.js"></script>
     </footer>
 </body>
 </html>

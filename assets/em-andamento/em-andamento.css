@@ -2,6 +2,7 @@ html, body {
     margin: 0;
     padding: 0;
     height: 100%;
+    overflow-x: hidden;
 }
 
 section {
@@ -71,10 +72,11 @@ h3 {
 .secao-imagens {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
     margin-bottom: 10vh;
 }
 .imagem-projeto {
-    width: 33.333vw;
+    width: 32vw;
     height: 29vw;
     display: block;
     object-fit: cover;
@@ -86,7 +88,7 @@ h3 {
 }
 
 .wrapper-imagem {
-    width: 33.333vw;
+    width: 32vw;
     height: 29vw;
     position: relative;
 }

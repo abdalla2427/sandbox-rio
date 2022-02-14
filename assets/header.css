@@ -15,7 +15,7 @@ nav a {
     color: #fff;
 }
 nav {
-    padding-right: 2em;
+    padding-right: 2rem;
     display:  flex;
     flex-direction: row;
     z-index: 100;
@@ -147,6 +147,7 @@ header img {
         box-sizing: border-box;
         cursor: pointer;
     }
-    #menu-hamburger {
+    .dropdown:hover .dropdown-content  {
+        display: none;
     }
 }

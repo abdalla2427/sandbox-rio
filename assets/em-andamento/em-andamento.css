@@ -175,16 +175,4 @@ h3 {
         background-color: #8967AA;
     }
 
-    #map { 
-        height: 100%;
-        width: 100%;
-        min-height: 450px;
-        margin-bottom: 10vh;
-    }
-    
-    #section-map {
-        width: 80vh;
-        min-width: 300px;
-        height: 80vh;
-    }
 }

@@ -13,14 +13,19 @@ section {
     justify-content: center;
     flex-direction: column;
 }
-
+.anexos {
+    width: 90vw;
+    max-width: 900px;
+}
 .anexos ul {
     padding: 0;
-    width: 70vw;
 }
 .anexos li {
     list-style-type: none;
     margin-top: 1em;
+}
+.anexos li span {
+    text-align: left;
 }
 .anexos button {
     height: 40px;
@@ -76,9 +81,9 @@ h1{
     color: grey;
 }
 .faq {
-    width: 900px;
-    margin-bottom: 600px;
-    margin-top: 130px;
+    width: 90vw;
+    max-width: 900px;
+    margin-bottom: 10vh;
 }
 
 #lista-faq {
@@ -87,7 +92,7 @@ h1{
     gap: 0.4rem;
 }
 .card-faq {
-    width: 70vw;
+    width: 100%;
     min-width: 350px;
     box-shadow: 0 2px 4px 0 rgba(0,0,0,0.2);
     border-radius: 5px;
@@ -141,6 +146,40 @@ h1{
 .icone-expand-more {
     color: #8967AA;
 }
-.ciclo-chamdas {
-    margin: 5vh 0 8vh 0;
+.ciclo-chamadas {
+    margin: 0 0 5vh 0;
+    width: 100vw;
+    overflow-x: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.ciclo-chamadas img {
+    width: 70%;
+    min-height: 100px;
+}
+
+@media (max-width: 690px) {
+
+    .ciclo-chamadas img {
+        width: 100%;
+        min-height: 100px;
+    }
+
+    h1{
+        font-size: 2.5em;
+    }
+    p {
+        font-size: 0.85em;
+    }
+
+    #lista-editais {
+        padding: 0;
+    }
+    .decoracao-titulo {
+        top: 10px;
+        width: 1.5rem;
+        height: 0.4rem;
+        background-color: #8967AA;
+    }
 }

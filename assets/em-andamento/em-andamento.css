@@ -116,7 +116,75 @@ h3 {
 }
 
 #map { 
-    height: 60vh;
-    width: 60vw;
+    height: 100%;
+    width: 100%;
+    min-height: 450px;
     margin-bottom: 10vh;
+}
+
+#section-map {
+    width: 80vh;
+    min-width: 300px;
+    height: 80vh;
+}
+
+@media (max-width: 690px) {
+
+    section {
+        margin-top: 70px;
+    }
+
+    .ciclo-chamadas img {
+        width: 100%;
+        min-height: 100px;
+    }
+
+    .image__title {
+        font-size: 1rem !important;
+        font-weight: bold;
+    }
+
+    .image__description {
+        font-size: 0.75em !important;
+        margin-top: 0.25em;
+    }
+    .secao-imagens {
+        margin-bottom: 2vh;
+    }
+    h1{
+        font-size: 2.5rem;
+    }
+    h3 {
+        font-size: 1rem;
+    }
+    p {
+        font-size: 0.85em;
+    }
+
+    .titulo-texto {
+        padding-bottom: 0;
+    }
+
+    #lista-editais {
+        padding: 0;
+    }
+    .decoracao-titulo {
+        top: 10px;
+        width: 1.5rem;
+        height: 0.4rem;
+        background-color: #8967AA;
+    }
+
+    #map { 
+        height: 100%;
+        width: 100%;
+        min-height: 450px;
+        margin-bottom: 10vh;
+    }
+    
+    #section-map {
+        width: 80vh;
+        min-width: 300px;
+        height: 80vh;
+    }
 }

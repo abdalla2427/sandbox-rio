@@ -309,6 +309,12 @@ p {
     }
 }
 @media (max-width: 690px) {
+    #noticia-container {
+        margin: 5vh 6vw;
+    }
+    #lista-publicacoes {
+        margin: 5vh 6vw;
+    }
     h1{
         font-size: 2.5em;
     }

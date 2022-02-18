@@ -101,6 +101,25 @@ p {
 #lista-faq {
     width: 80vw;
 }
+#lista-ciclo-como-funciona {
+    padding: 0;
+}
+#lista-ciclo-como-funciona p{
+    margin-left: 1em;
+}
+#lista-ciclo-como-funciona li {
+    list-style: none;
+    display: flex;
+}
+#lista-ciclo-como-funciona li::before {
+    content: "\2022";
+    color: grey;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    font-size: 1.3em;
+    align-self: center;
+  }
 
 
 @media (min-width: 690px) {
@@ -134,7 +153,6 @@ p {
         background-position: center;
         /* Create the parallax scrolling effect */
     }
-
     #lista-vantagens {
         flex-direction: column;
         width: 330px;

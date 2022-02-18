@@ -117,6 +117,23 @@ h1{
     height: 0;
     /* transition: 0.2s; */
 }
+
+.conteudo-card-faq ul li {
+    display: flex;
+    list-style: none;
+}
+
+.conteudo-card-faq ul li::before {
+    content: "\2022";
+    color: grey;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    margin-left: -1em;
+    font-size: 1.3em;
+    align-self: center;
+  }
+
 .conteudo-card-faq ul li p {
     margin: 1rem;
 }

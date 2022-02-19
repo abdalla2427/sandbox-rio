@@ -10,6 +10,16 @@ header {
     box-sizing: border-box;
 
 }
+
+html {
+    scroll-behavior:smooth
+}
+
+.navegacao-externa {
+    position: absolute;
+    top: -70px;
+    z-index: 1000;
+}
 nav a {
     text-decoration: none;
     color: #fff;

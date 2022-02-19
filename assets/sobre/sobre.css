@@ -83,11 +83,6 @@ p {
     width: 25vw;
 }
 
-.navegacao-externa {
-    position: absolute;
-    top: -70px;
-}
-
 #div-ciclo-como-funciona {
     display: flex;
     justify-content: center;

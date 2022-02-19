@@ -7,7 +7,7 @@ html, body {
 
 section {
     color: black;
-    margin-top: 150px;
+    margin-top: 70px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,6 +16,7 @@ section {
 .anexos {
     width: 90vw;
     max-width: 900px;
+    margin: 12vh 0;
 }
 .anexos ul {
     padding: 0;
@@ -81,9 +82,9 @@ h1{
     color: grey;
 }
 .faq {
+    height: 90vh;
     width: 90vw;
     max-width: 900px;
-    margin-bottom: 10vh;
 }
 
 #lista-faq {
@@ -164,7 +165,7 @@ h1{
     color: #8967AA;
 }
 .ciclo-chamadas {
-    margin: 0 0 5vh 0;
+    margin: 10vh 0 5vh 0;
     width: 100vw;
     overflow-x: auto;
     display: flex;

@@ -167,12 +167,11 @@ p {
     box-sizing: border-box;
 }
 
-.btn-card-publicacao .icone-botao {
+.btn-card-publicacao {
     color: grey;
-    font-size: 2em !important;
-    margin-top: 0.2em;
-    height: 100%;
-    width: 100%;
+    font-size: 1.5em !important;
+    font-weight: lighter;
+    -webkit-font-smoothing: antialiased;
 }
 
 .video-sandbox {
@@ -223,15 +222,16 @@ p {
 .noticia-titulo {
     color: grey;
     font-weight: 50;
+    padding: 0 !important;
 }
 
 .noticia-card-imagem {
-    height: 55%;
+    height: 50%;
     background: wheat;
     display: flex;
     gap: 1em;
-    border: 2px solid #8967AA;
-    box-sizing: border-box;
+    /* border: 2px solid #8967AA;
+    box-sizing: border-box; */
     min-height: 55%;
     overflow: hidden;
 }
@@ -245,11 +245,13 @@ p {
 }
 
 .noticia-card-conteudo {
-    height: 45%;
+    height: 50%;
     box-sizing: border-box;
     position: relative;
     display: flex;
     flex-direction: column;
+    padding: 12px;
+    box-sizing: border-box;
 }
 
 .noticia-card-conteudo h3, p {
@@ -261,16 +263,14 @@ p {
     font-size: 0.9em;
     color: grey;
 }
-.noticia-card-conteudo {
-    padding: 12px;
-    box-sizing: border-box;
-}
+
 .noticia-card-conteudo a {
     font-size: 1.2em;
 }
 
 .noticia-dia {
     margin-top: 8px;
+    margin-top: -2px;
     font-size: 0.65em !important;
 }
 
@@ -281,6 +281,7 @@ p {
     text-decoration: none;
     color: inherit !important;
     letter-spacing: normal;
+    display: inline-block;
 }
 
 .noticia-ler-mais p {

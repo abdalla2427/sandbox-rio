@@ -139,23 +139,6 @@ p {
     position: absolute;
 }
 
-.imagem-wrapper:hover .imagem-card-publicacao{
-    transform: scale(1.1);
-    transition: 0.2s
-}
-
-.imagem-wrapper:hover .card-publicacao-overlay{
-    background-color: #8967AA;
-    opacity: 0.6;
-    transition: 0.9s;
-    cursor: pointer;
-}
-.imagem-wrapper:hover .btn-card-publicacao{
-    visibility: visible;
-    transition: 0.3s;
-    cursor: pointer;
-}
-
 .btn-card-publicacao {
     position: absolute;
     visibility: hidden;
@@ -314,6 +297,26 @@ p {
         background-size: cover;
     }
 }
+@media (min-width: 700px) {
+
+    .imagem-wrapper:hover .imagem-card-publicacao{
+        transform: scale(1.1);
+        transition: 0.2s
+    }
+
+    .imagem-wrapper:hover .card-publicacao-overlay{
+        background-color: #8967AA;
+        opacity: 0.6;
+        transition: 0.9s;
+        cursor: pointer;
+    }
+    .imagem-wrapper:hover .btn-card-publicacao{
+        visibility: visible;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+}
+
 @media (max-width: 690px) {
     #noticia-container {
         margin: 5vh 6vw;

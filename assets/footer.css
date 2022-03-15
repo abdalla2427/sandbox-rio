@@ -3,6 +3,8 @@ footer {
     font-family: arial,helvetica;
     color: #fff;
     bottom: 0px;
+    box-sizing: border-box;
+    height: fit-content;
 }
 .itens-footer {
     display: flex;

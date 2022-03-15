@@ -4,14 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>sandbox.rio</title>
-    <link rel="stylesheet" href="assets/index/index.css">
+    <title>sandbox.rio - em andamento</title>
     <link rel="stylesheet" href="assets/header.css">
+    <link rel="stylesheet" href="assets/em-andamento/em-andamento.css">
+    <link rel="stylesheet" href="assets/progress-bar.css">
+    <link rel="stylesheet" href="assets/efeito-overlay.css">
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="assets/em-andamento/em-andamento.js"></script>
+
     <link rel="stylesheet" href="assets/footer.css">
-    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-    rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <style>
+        section {
+            height: calc(100vh - 65px);
+            margin: 0;
+            display: block;
+        }
+        section h4 {
+            font-family: arial,helvetica;
+            color: grey;
+            position: absolute;
+            top: 65px;
+            margin: 20px
+        }
+    </style>
 </head>
 <body>
+    <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+    integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+    crossorigin=""></script> 
     <header>
         <a href="index.html">
             <div href="index.html" id="home">
@@ -34,28 +55,16 @@
                         <a class="dropdown-link" href="sobre.html#como-funciona-section">como funciona?</a>
                     </div>
                 </li>
-                <li class="dropdown">
-                    <a href="chamadas.html">chamadas</a>
-                    <div class="dropdown-content">
-                        <a class="dropdown-link" href="chamadas.html">ciclo de seleção</a>
-                        <a class="dropdown-link" href="chamadas.html#edital-e-anexos-section">edital e anexos</a>
-                        <a class="dropdown-link" href="chamadas.html#faq-section">FAQ</a>
-                    </div>
-                </li>
+                <li><a href="chamadas.html">chamadas</a></li>
                 <li><a href="em-breve.html">em andamento</a></li>
                 <li><a href="transparencia.html">transparência</a></li>
             </ul>
         </nav>
     </header>
     <section>
-        <video id="video" playsinline autoplay muted loop>
-            <source src="assets/index/pagina-principal.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-          </video>
-        <div id="logos">
-            <img id="logo-smdeis" class="logo-video" src="assets/smdeis.png">
-            <img id="logo-sandbox" class="logo-video" src="assets/sandbox-logo.png">
-        </div>
+        <h4>
+            EM BREVE
+        </h4>
     </section>
     <footer>
         <div class="itens-footer">

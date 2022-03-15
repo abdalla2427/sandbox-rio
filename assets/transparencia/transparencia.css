@@ -10,6 +10,10 @@ html {
     scroll-behavior:smooth
 }
 
+.d-none {
+    display: none !important;
+}
+
 #bg-sobre {
     background-color: #9E72B0;
     height: 100%;
@@ -183,7 +187,7 @@ p {
     display: flex;
     flex-wrap: wrap;
     gap: 3em;
-    justify-content: center;
+    justify-content: left;
     margin: 10vh 6vw;
     height: fit-content;
 }
@@ -221,7 +225,7 @@ p {
 .noticia-card-imagem img {
     width: 102%;
     height: 102%;
-    transform: scale(1.1);
+    transform: scale(1.0);
     object-position: center;
     background-repeat: no-repeat;
     object-fit: cover;

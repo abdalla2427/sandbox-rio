@@ -82,9 +82,11 @@ h1{
     color: grey;
 }
 .faq {
-    height: 90vh;
+    height: fit-content;
     width: 90vw;
     max-width: 900px;
+    margin-bottom: 20vh;
+    box-sizing: border-box;
 }
 
 #lista-faq {

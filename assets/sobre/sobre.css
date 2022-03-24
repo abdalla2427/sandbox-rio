@@ -4,6 +4,8 @@ body {
     padding: 0;
     margin: 0;
     font-family: arial,helvetica;
+    min-height: 100vh;
+    position: relative;
 }
 html {
     scroll-behavior:smooth
@@ -16,6 +18,7 @@ html {
     color: black;
     display: flex;
     flex-direction: column;
+    margin-bottom: 20vh;
 }
 
 .bloco-texto {

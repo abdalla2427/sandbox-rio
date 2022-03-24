@@ -18,7 +18,7 @@
         section {
             height: calc(100vh - 65px);
             margin: 0;
-            display: block;
+            display: flex;
         }
         section h4 {
             font-family: arial,helvetica;
@@ -26,6 +26,14 @@
             position: absolute;
             top: 65px;
             margin: 20px
+        }
+        section img {
+            width: 40vw;
+        }
+        @media (max-width: 820px){
+            section img {
+                width: 100vw;
+            }
         }
     </style>
 </head>
@@ -64,15 +72,13 @@
                     </div>
                 </li>
                 <li id="transparencia" ><a href="transparencia.html">transparência</a></li>
-                <li id="publicacoes" ><a href="transparencia.html">publicações</a></li>
+                <li id="publicacoes" ><a href="publicacoes.html">publicações</a></li>
                 <li id="projetos-em-andamento" ><a href="em-breve.html">projetos<br>em andamento</a></li>
             </ul>
         </nav>
     </header>
     <section>
-        <h4>
-            EM BREVE
-        </h4>
+        <img src="assets/em-breve.png">
     </section>
     <footer>
         <div class="itens-footer">

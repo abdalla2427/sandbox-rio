@@ -1,8 +1,14 @@
 html, body {
     margin: 0;
     padding: 0;
-    height: 100%;
     overflow-x: hidden;
+    position: relative;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+html {
+    overflow-y: auto;
 }
 
 section {
@@ -201,5 +207,8 @@ h1{
         width: 1.5rem;
         height: 0.4rem;
         background-color: #8967AA;
+    }
+    section {
+        margin-bottom: 50vh
     }
 }

@@ -112,7 +112,7 @@ header img {
 }
 
 
-@media (max-width: 970px) {
+@media (max-width: 1150px) {
     nav ul{
         visibility: hidden;
         display: block;

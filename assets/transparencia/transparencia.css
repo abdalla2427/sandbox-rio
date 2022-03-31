@@ -89,8 +89,9 @@ p {
 
 .card-membro {
     display: flex;
+    align-self: flex-start;
     flex-direction: column;
-    width: 300px;
+    width: 270px;
     justify-content: center;
     align-content: center;
     text-align: center;
@@ -107,6 +108,7 @@ p {
     border-radius: 50%;
     max-width: 200px;
     align-self: center;
+    justify-self: flex-start;
 }
 
 .nome-membro, .descricao-membro {
@@ -282,7 +284,11 @@ p {
         cursor: pointer;
     }
 }
-
+@media (max-width: 1400px) {
+    .card-membro {
+        margin: 2vh 2vw 3vh 2vw;
+    }
+}
 @media (max-width: 690px) {
     #noticia-container {
         margin: 5vh 6vw;

@@ -19,10 +19,10 @@ section {
     justify-content: center;
     flex-direction: column;
 }
-.anexos {
+.anexos, .link-inscricao {
     width: 90vw;
     max-width: 900px;
-    margin: 12vh 0;
+    margin: 12vh 0 6vh 0;
 }
 .anexos ul {
     padding: 0;
@@ -93,6 +93,7 @@ h1{
     max-width: 900px;
     margin-bottom: 20vh;
     box-sizing: border-box;
+    margin-top: 6vh;
 }
 
 #lista-faq {
@@ -167,6 +168,24 @@ h1{
     -webkit-font-smoothing: antialiased;
     color: rgb(167, 167, 167);
     font-weight:200;
+}
+
+.link-inscricao{
+    font: normal normal 1.2rem/1.4em raleway,sans-serif;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    color: rgb(167, 167, 167);
+    margin: 0;
+    font-weight: 100 !important;
+    border-bottom: solid;
+    border-width: thin;
+    padding-bottom: 10px;
+}
+
+.link-inscricao a {
+    text-decoration: none;
+    cursor: pointer;
+    color: #8967AA;
 }
 
 .icone-expand-more {

@@ -16,53 +16,53 @@ export const Header = () => {
         </button>
         <ul id="lista-navegacao">
           <li id="sobre" className="dropdown">
-            <a href="/sobre">sobre o sandbox</a>
+            <Link to="/sobre">sobre o sandbox</Link>
             <div className="dropdown-content">
-              <a className="dropdown-link" href="sobre#o-que-eh-section">
+              <Link className="dropdown-link" to="sobre#o-que-eh-section">
                 o que é?
-              </a>
-              <a className="dropdown-link" href="sobre#vantagens-section">
+              </Link>
+              <Link className="dropdown-link" to="sobre#vantagens-section">
                 vantagens
-              </a>
-              <a
+              </Link>
+              <Link
                 className="dropdown-link"
-                href="/sobre#quem-pode-participar-section"
+                to="/sobre#quem-pode-participar-section"
               >
                 quem pode participar?
-              </a>
-              <a className="dropdown-link" href="sobre#como-funciona-section">
+              </Link>
+              <Link className="dropdown-link" to="sobre#como-funciona-section">
                 como funciona?
-              </a>
-              <a className="dropdown-link" href="sobre#equipe-section">
+              </Link>
+              <Link className="dropdown-link" to="sobre#equipe-section">
                 equipe
-              </a>
+              </Link>
             </div>
           </li>
           <li id="chamadas" className="dropdown">
-            <a href="/chamadas">chamadas</a>
+            <Link to="/chamadas">chamadas</Link>
             <div className="dropdown-content">
-              <a className="dropdown-link" href="chamadas">
+              <Link className="dropdown-link" to="chamadas">
                 ciclo de seleção
-              </a>
-              <a
+              </Link>
+              <Link
                 className="dropdown-link"
-                href="/chamadas#edital-e-anexos-section"
+                to="/chamadas#edital-e-anexos-section"
               >
                 edital e anexos
-              </a>
-              <a className="dropdown-link" href="chamadas#faq-section">
+              </Link>
+              <Link className="dropdown-link" to="chamadas#faq-section">
                 FAQ
-              </a>
+              </Link>
             </div>
           </li>
           <li id="transparencia">
-            <a href="/transparencia">transparência</a>
+            <Link to="/transparencia">transparência</Link>
           </li>
           <li id="publicacoes">
-            <a href="/publicacoes">publicações</a>
+            <Link to="/publicacoes">publicações</Link>
           </li>
           <li id="projetos-em-andamento">
-            <a href="/em-andamento">projetos em andamento</a>
+            <Link to="/em-andamento">projetos em andamento</Link>
           </li>
         </ul>
       </nav>

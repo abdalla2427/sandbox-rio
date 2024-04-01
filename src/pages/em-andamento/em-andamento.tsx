@@ -4,6 +4,7 @@ import ambev from "./ambev.jpeg";
 import ezVolt from "./ez_volt.jpeg";
 import myView from "./my_view.jpeg";
 import eveEmbraer from "./eve.jpeg";
+import { Link } from "react-router-dom";
 
 export const EmAndamento = () => {
   return (
@@ -22,12 +23,12 @@ export const EmAndamento = () => {
             <div className="image__overlay image__overlay--primary overlay">
               <div className="image__title">AMBEV + SpeedBird</div>
               <p className="image__description"> Projeto Rio de Janeiro</p>
-              <a
+              <Link
                 className="image__description image__link"
-                href="em-andamento/ambev"
+                to="em-andamento/ambev"
               >
                 Ver mais
-              </a>
+              </Link>
             </div>
           </div>
           <div className="wrapper-imagem">
@@ -35,12 +36,12 @@ export const EmAndamento = () => {
             <div className="image__overlay image__overlay--primary overlay">
               <div className="image__title">Ezvolt Brasil</div>
               <p className="image__description">Projeto Eletroposto Carioca</p>
-              <a
+              <Link
                 className="image__description image__link"
-                href="em-andamento/ez-volt"
+                to="em-andamento/ez-volt"
               >
                 Ver mais
-              </a>
+              </Link>
             </div>
           </div>
           <div className="wrapper-imagem">
@@ -48,12 +49,12 @@ export const EmAndamento = () => {
             <div className="image__overlay image__overlay--primary overlay">
               <div className="image__title">MyView</div>
               <p className="image__description">Robôs D4 in Rio</p>
-              <a
+              <Link
                 className="image__description image__link"
-                href="em-andamento/my-view"
+                to="em-andamento/my-view"
               >
                 Ver mais
-              </a>
+              </Link>
             </div>
           </div>
           <div className="wrapper-imagem">
@@ -61,12 +62,12 @@ export const EmAndamento = () => {
             <div className="image__overlay image__overlay--primary overlay">
               <div className="image__title">Eve Air Mobility</div>
               <p className="image__description">Projeto eVTOL in Rio</p>
-              <a
+              <Link
                 className="image__description image__link"
-                href="em-andamento/eve"
+                to="em-andamento/eve"
               >
                 Ver mais
-              </a>
+              </Link>
             </div>
           </div>
         </div>

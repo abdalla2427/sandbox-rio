@@ -1,9 +1,8 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/home/home.tsx";
-import { EmBreve } from "./pages/em-breve/em-breve.tsx";
 import { Header } from "./components/header/header.tsx";
 import { Footer } from "./components/footer/footer.tsx";
 import { Sobre } from "./pages/sobre/sobre.tsx";
@@ -16,63 +15,23 @@ import { EzVolt } from "./components/detalhes-projeto/ez-volt.tsx";
 import { MyViewDetalhes } from "./components/detalhes-projeto/my-view.tsx";
 import { EveDetalhes } from "./components/detalhes-projeto/eve.tsx";
 
-const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-    errorElement: <EmBreve />,
-  },
-  {
-    path: "/sobre",
-    element: <Sobre />,
-    errorElement: <EmBreve />,
-  },
-  {
-    path: "/chamadas",
-    element: <Chamadas />,
-    errorElement: <EmBreve />,
-  },
-  {
-    path: "/transparencia",
-    element: <Transparencia />,
-    errorElement: <EmBreve />,
-  },
-  {
-    path: "/publicacoes",
-    element: <Publicacoes />,
-    errorElement: <EmBreve />,
-  },
-  {
-    path: "/em-andamento",
-    element: <EmAndamento />,
-    errorElement: <EmBreve />,
-  },
-  {
-    path: "/em-andamento/ambev",
-    element: <Ambev />,
-    errorElement: <EmBreve />,
-  },
-  {
-    path: "/em-andamento/ez-volt",
-    element: <EzVolt />,
-    errorElement: <EmBreve />,
-  },
-  {
-    path: "/em-andamento/eve",
-    element: <EveDetalhes />,
-    errorElement: <EmBreve />,
-  },
-  {
-    path: "/em-andamento/my-view",
-    element: <MyViewDetalhes />,
-    errorElement: <EmBreve />,
-  },
-]);
-
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <Header />
-    <RouterProvider router={router} />
-    <Footer />
+    <BrowserRouter>
+      <Header />
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/sobre" element={<Sobre />} />
+        <Route path="/chamadas" element={<Chamadas />} />
+        <Route path="/transparencia" element={<Transparencia />} />
+        <Route path="/publicacoes" element={<Publicacoes />} />
+        <Route path="/em-andamento" element={<EmAndamento />} />
+        <Route path="/em-andamento/ambev" element={<Ambev />} />
+        <Route path="/em-andamento/ez-volt" element={<EzVolt />} />
+        <Route path="/em-andamento/eve" element={<EveDetalhes />} />
+        <Route path="/em-andamento/my-view" element={<MyViewDetalhes />} />
+      </Routes>
+      <Footer />
+    </BrowserRouter>
   </React.StrictMode>
 );

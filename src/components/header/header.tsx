@@ -1,12 +1,13 @@
+import { Link } from "react-router-dom";
 import "./header.css";
 import sandboxLogo from "./sandbox-logo.png";
 
 export const Header = () => {
   return (
     <header>
-      <a href="/" id="home">
+      <Link to="/" id="home">
         <img src={sandboxLogo} />
-      </a>
+      </Link>
       <nav>
         <button id="menu-hamburger">
           <span></span>

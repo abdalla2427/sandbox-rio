@@ -1,0 +1,210 @@
+#bg-sobre {
+    background-color: #9E72B0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+}
+
+.bloco-texto {
+    background-color: white;
+    position: relative;
+
+}
+.titulo-texto-sobre {
+    padding: 4vh 22vw 0vh 8vw;
+}
+
+h1{
+    top: 30vh;
+    left: 40vw;
+    font: normal normal bold 80px/1.4em raleway,sans-serif;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    margin: 0;
+    color: grey;
+}
+p {
+    line-height: 1.6em;
+    font-size: 20px;
+    color: grey;
+    letter-spacing: 0.05em;
+}
+#o-que-eh-foto{
+    background-image: url("./drone.jpeg");
+}
+#vantagens-foto {
+    background-image: url("./onibus.jpeg");
+}
+#venha-participar-do-sandbox{
+    background-image: url("./vlt.jpeg");
+}
+#participar-foto {
+    background-image: url("./drone.jpeg");
+}
+
+#funciona-image{
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.decoracao-titulo-sobre {
+    top: 10px;
+    width: 65px;
+    height: 10px;
+    background-color: #8967AA;
+}
+
+#lista-vantagens {
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    justify-content: space-around;
+
+}
+.video-sandbox {
+    width: 70vw;
+    min-width: 330px;
+}
+#lista-vantagens li {
+    margin-right: 20px;
+    width: 25vw;
+}
+
+#div-ciclo-como-funciona {
+    display: flex;
+    justify-content: center;
+}
+#div-ciclo-como-funciona img {
+    width: 95vw;
+    align-self: center;
+    padding: 10vh 0;
+}
+
+#lista-faq {
+    width: 80vw;
+}
+#lista-ciclo-como-funciona {
+    padding: 0;
+}
+#lista-ciclo-como-funciona p{
+    margin-left: 1em;
+}
+#lista-ciclo-como-funciona li {
+    list-style: none;
+    display: flex;
+}
+#lista-ciclo-como-funciona li::before {
+    content: "\2022";
+    color: grey;
+    font-weight: bold;
+    display: inline-block; 
+    width: 1em;
+    font-size: 1.3em;
+    align-self: center;
+  }
+
+
+#equipe-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 10vh;
+    margin-top: 4vh;
+}
+
+.card-membro {
+    display: flex;
+    align-self: flex-start;
+    flex-direction: column;
+    width: 270px;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    margin: 2vh 5vw 3vh 5vw;
+    min-height: 300px;
+}
+
+.contato-membro img {
+    height: 36px;
+    width: 36px;
+}
+
+.foto-membro {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    align-self: center;
+    justify-self: flex-start;
+}
+
+.nome-membro, .descricao-membro {
+    font-size: 1.1em;
+    letter-spacing: 1px;
+    -webkit-font-smoothing: antialiased;
+    margin: 10px;
+}
+
+.descricao-membro {
+    font-size: 0.8em;
+    letter-spacing: 0.5px;
+    text-align:center;
+    color: grey;
+}
+
+.video-sandbox {
+    width: 70vw;
+    margin-left: calc((100vw - 70vw)/2);
+    align-self: center;
+}
+
+
+@media (min-width: 690px) {
+    .parallax {
+        opacity: 0.5;
+        width: 100vw;
+        /* Set a specific height */
+        min-height: 500px; 
+        
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 690px) {
+    h1{
+        font-size: 2rem;
+    }
+    p {
+        font-size: 0.95rem;
+    }
+    .parallax {
+        opacity: 0.5;
+        width: 100vw;
+        /* Set a specific height */
+        min-height: 500px; 
+        object-fit: cover;
+        background-position: center;
+        /* Create the parallax scrolling effect */
+    }
+    #lista-vantagens {
+        flex-direction: column;
+        width: 330px;
+    }
+    #lista-vantagens li {
+        min-width: 330px
+    }
+    #lista-editais {
+        padding: 0;
+    }
+    .decoracao-titulo {
+        top: 10px;
+        width: 1.5em;
+        height: 0.4em;
+        background-color: #8967AA;
+    }
+}

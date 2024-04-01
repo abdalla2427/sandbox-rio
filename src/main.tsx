@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { BrowserRouter, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/home/home.tsx";
 import { Header } from "./components/header/header.tsx";
 import { Footer } from "./components/footer/footer.tsx";
@@ -30,6 +30,7 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/em-andamento/ez-volt" element={<EzVolt />} />
         <Route path="/em-andamento/eve" element={<EveDetalhes />} />
         <Route path="/em-andamento/my-view" element={<MyViewDetalhes />} />
+        <Route path="/sandbox-rio/*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </BrowserRouter>

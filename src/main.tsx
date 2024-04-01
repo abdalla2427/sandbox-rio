@@ -1,7 +1,7 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import { BrowserRouter, Navigate, Route, Routes } from "react-router-dom";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
 import { Home } from "./pages/home/home.tsx";
 import { Header } from "./components/header/header.tsx";
 import { Footer } from "./components/footer/footer.tsx";
@@ -15,9 +15,10 @@ import { EzVolt } from "./components/detalhes-projeto/ez-volt.tsx";
 import { MyViewDetalhes } from "./components/detalhes-projeto/my-view.tsx";
 import { EveDetalhes } from "./components/detalhes-projeto/eve.tsx";
 
+const githubDeploy = true;
 ReactDOM.createRoot(document.getElementById("root")!).render(
   <React.StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename={githubDeploy ? "/sandbox-rio" : "/"}>
       <Header />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -30,7 +31,6 @@ ReactDOM.createRoot(document.getElementById("root")!).render(
         <Route path="/em-andamento/ez-volt" element={<EzVolt />} />
         <Route path="/em-andamento/eve" element={<EveDetalhes />} />
         <Route path="/em-andamento/my-view" element={<MyViewDetalhes />} />
-        <Route path="/sandbox-rio/*" element={<Navigate to="/" />} />
       </Routes>
       <Footer />
     </BrowserRouter>
